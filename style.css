@@ -1,0 +1,326 @@
+/*whole page*/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: white;
+    background-color: rgb(208, 240, 240);
+}
+
+/*body*/
+.body{
+    background-color: rgb(208, 240, 240);
+}
+
+
+
+
+
+
+/*nav-bar starts*/
+.head {
+    height: 80px;
+    margin: 10px;
+}
+
+.nav-bar {
+    background-color: rgb(129, 187, 187);
+    border-radius: 10px;
+    height: 80px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.same {
+    background-color: rgb(129, 187, 187);
+    /* aspect-ratio: 3/2;*/
+    margin: 20px;
+    height: 30px;
+    font-size: 2rem;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-sizing: border-box;
+    padding: 5px;
+    /* Adding padding to include border space */
+    border: 2px solid transparent;
+    /* Default transparent border */
+}
+
+/*.same:hover {
+    cursor: pointer;
+    background-color: lightblue;
+    border: 2px solid cyan;
+    border-radius: 3px;
+}*/
+
+.menu-bar {
+    height: 40px;
+    align-items: center;
+    justify-content: space-between;
+    background: transparent;
+    border-right: 2px solid black;
+    border-left: 2px solid black;
+    cursor: pointer;
+}
+
+.same button{
+    cursor: pointer;
+}
+
+.same2 {
+    border: none;
+    margin: 35px;
+    font-size: 20px;
+    background-color: rgb(129, 187, 187);
+}
+
+.same {
+    font-weight: bold;
+    margin: 100px;
+}
+
+.login{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.con{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 3px;
+}
+
+.search-bar{
+    display: flex;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+    width: 300px;
+    height: 34px;
+    background-color: chartreuse;
+}
+
+/*nav bar search*/
+.search{
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+    display: flex;
+    border: none;
+    width: 300px;
+    height: 34px;
+    font-size: 20px;
+    padding: 8px;
+    }
+
+.search:hover{
+    text-decoration: none;
+    border: none;
+    }
+
+.search-icon{
+    margin: 2px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 20px;
+    font-size: 17px;  
+}
+
+.cart{
+    margin: 25px;
+    background-color: rgb(129, 187, 187);
+    font-size: 25px;
+}
+
+.fa-cart-shopping:before, .fa-shopping-cart:before {
+    content: "\f07a";
+    background-color: rgb(129, 187, 187);
+}
+
+/*end of nav-bar*/
+
+
+
+
+
+
+/*midd section 1 slider starts*/
+.main1 .search{
+    background-color: white;
+    padding: 15px;
+}
+
+.main1 .con .search-icon{
+    background-color: white;
+    height: 34px;
+    width: 40px;
+    margin: 0px;
+}
+
+.main1 .con .search-icon .fa-location{
+    background-color: white;
+}
+
+
+/*midd section order button */
+.but{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 260px;
+    margin-top: 30px;  
+}
+
+.s2{
+    font-size: 12px;  
+}
+
+.btn{
+    height: 40px;
+    width: 100px;
+    background-color: rgb(00, 76, 76);
+    background-color: 0076 76;
+    color: white;
+}
+
+.btn2{
+    height: 40px;
+    width: 150px;  
+}
+
+/*sliding image animation*/
+.slider{
+    display: flex;  
+}
+
+.main1{
+    width: 50%;
+    height: 500px;
+    margin: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.main1 h1{
+    font-size: 4rem;
+}
+
+.hedd{
+    height: 100px;
+}
+/*midd section 1 ends*/
+
+
+
+
+
+
+/*midd section 2*/
+
+.par{
+    height: 80px;
+    width: 300px;
+    color: gray;
+}
+.main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20px;
+}
+
+.containor {
+    overflow: hidden;
+    border-radius: 15px;
+    width: inherit;
+    background: inherit;
+    position: relative;
+}
+
+.ani-containor {
+    display: flex;
+    animation: slide 18s 1s infinite cubic-bezier(0.075, 0.82, 0.165, 1);
+    position: relative;
+    animation: name duration timing-function delay iteration-count direction fill-mode;
+}
+
+.menu-items {
+    height: 500px;
+    width: 100px;
+    flex: 0 0 100%; /* Show one box at a time */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background: inherit;
+    margin: 10px;
+    border-radius: 15px;
+    background-color: burlywood;
+}
+
+@keyframes slide {
+    0%, 16.66% { transform: translateX(0); } /* Show first box */
+    16.66%, 33.32% { transform: translateX(-104%); } /* Show second box */
+    33.32%, 49.98% { transform: translateX(-207%);} /* Show third box */
+    49.98%, 66.64% { transform: translateX(-308%); } /* Show fourth box, reset to start */
+    66.64%, 83.3% { transform: translateX(-410%);} /* Show fifth box */
+    83.3%, 100% { transform: translateX(-515%); } /* Show sixth box, reset to start */
+    
+  }
+
+/*animation end*/
+
+
+
+
+
+
+/*2nd animation slider main-box*/
+
+.sub-box11 .containor .ani-containr{
+        display: flex;
+       /* animation: slide 18s 1s infinite cubic-bezier(0.075, 0.82, 0.165, 1);*/
+        position: relative;
+        /*animation: name duration timing-function delay iteration-count direction fill-mode;*/
+    
+}
+.hed2{
+    font-size: 3rem;
+    margin-bottom: 20px;
+}
+.sub-box12 .con2 .hedd{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 30px;
+    background-color: rgb(152, 230, 235);
+    width: 200px;
+    margin-bottom: 15px;
+}
+
+.p2{
+    color: black;
+}
+.sub-box12 .hedd h1{
+    font-size: 1rem;
+    background-color: rgb(152, 230, 235);
+    
+}
+
+.sub-box12{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.sub-box12 .par2{
+    width: 400px;
+    height: 50px;
+}
+/*end*/
